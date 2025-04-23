@@ -45,21 +45,35 @@
       </div>
     </div>
   </section>
-
   <section class="p-6 max-w-4xl mx-auto">
     <h2 class="text-2xl font-bold text-gray-800 mb-4">Interactive Section</h2>
-    <py-script output="fact-box">
-      from js import document
-      import random
-      
-      def generate_fact(*args, **kwargs):
-          facts = [
-              "Python is the most popular language for data science.",
-              "Data analysts spend 80% of their time cleaning data.",
-              "Excel can handle over 1 million rows of data.",
-              "GitHub Pages is perfect for hosting static sites."
-          ]
-          document.getElementById("fact-box").innerText = random.choice(facts)
+    
+    <div class="bg-indigo-100 p-6 rounded-xl">
+      <p id="fact-box" class="text-lg text-gray-700 mb-4">
+        Click the button to get a data fact!
+      </p>
+      <button 
+        onclick="generateFact()" 
+        class="bg-indigo-600 text-white font-semibold px-4 py-2 rounded hover:bg-indigo-700 transition duration-200"
+      >
+        Give me a fact
+      </button>
+    </div>
+  </section>
+  
+  <script>
+    const facts = [
+      "Python is the most popular language for data science.",
+      "Data analysts spend 80% of their time cleaning data.",
+      "Excel can handle over 1 million rows of data.",
+      "GitHub Pages is perfect for hosting static sites."
+    ];
+  
+    function generateFact() {
+      const randomIndex = Math.floor(Math.random() * facts.length);
+      document.getElementById("fact-box").innerText = facts[randomIndex];
+    }
+  </script>
       </py-script>
     <div class="bg-indigo-100 p-4 rounded-xl">
       <p id="fact-box" class="text-indigo-900 font-semibold mb-2">Click the button to get a data fact!</p>
