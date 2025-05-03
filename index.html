@@ -3,23 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Data Analyst Portfolio</title>
+  <meta name="description" content="Tina Mtika's Data Analyst Portfolio showcasing Python, SQL, and Power BI projects.">
+  <meta name="keywords" content="data analyst, portfolio, Tina Mtika, Python, Power BI, SQL">
+  <meta name="author" content="Tina Mtika">
+  <title>Tina Mtika — Data Analyst Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-  <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
-  <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
 </head>
 <body class="bg-gray-50 text-gray-900">
   <header class="bg-gradient-to-r from-indigo-900 via-blue-900 to-teal-600 p-6 shadow-lg">
-    <h1 class="text-white text-4xl font-bold text-center">Tina Mtika — Data Analyst</h1>
+    <h1 class="text-gray-100 text-4xl font-bold text-center">Tina Mtika — Data Analyst</h1>
   </header>
 
   <section class="p-6 max-w-4xl mx-auto">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div class="bg-white rounded-2xl shadow-xl p-4 hover:scale-105 transition-transform duration-500">
         <h2 class="text-xl font-semibold text-indigo-800">About Me</h2>
-        <p class="mt-2 text-gray-600">I'm Tina Mtika, a passionate Data Analyst skilled in uncovering insights and telling compelling stories with data. I thrive at the intersection of Python, Excel, and impactful visualization.</p>
+        <p class="mt-2 text-gray-600">I'm Tina Mtika, a passionate Data Analyst skilled in uncovering insights and telling compelling stories with data. I thrive at the intersection of Python, Excel, and impactful visualization. Fun fact: I love turning raw numbers into narratives that spark action!</p>
       </div>
       <div class="bg-white rounded-2xl shadow-xl p-4 hover:scale-105 transition-transform duration-500">
         <h2 class="text-xl font-semibold text-indigo-800">Skills</h2>
@@ -34,33 +35,57 @@
 
   <section class="p-6 max-w-4xl mx-auto">
     <h2 class="text-2xl font-bold text-gray-800 mb-4">Projects</h2>
+    <p class="text-gray-600 mb-4">Note: Projects are in progress. Check back for live demos!</p>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div class="bg-white rounded-2xl shadow-md p-4 hover:bg-teal-50 transition duration-300">
         <h3 class="text-lg font-semibold text-indigo-700">Sales Dashboard</h3>
         <p class="text-gray-600">Interactive dashboard built with Power BI for real-time sales insights.</p>
+        <a href="https://github.com/TinaMtika/superstore-sales-insights" target="_blank" class="text-indigo-600 hover:underline">View Code</a>
       </div>
       <div class="bg-white rounded-2xl shadow-md p-4 hover:bg-teal-50 transition duration-300">
         <h3 class="text-lg font-semibold text-indigo-700">Web Scraper & Analyzer</h3>
         <p class="text-gray-600">Automated Python tool to collect and visualize e-commerce price trends.</p>
+        <a href="https://github.com/TinaMtika/web-scraper" target="_blank" class="text-indigo-600 hover:underline">View Code</a>
       </div>
     </div>
   </section>
+
   <section class="p-6 max-w-4xl mx-auto">
-    <h2 class="text-2xl font-bold text-gray-800 mb-4">Interactive Section</h2>
-    
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">Fun Data Facts</h2>
     <div class="bg-indigo-100 p-6 rounded-xl">
-      <p id="fact-box" class="text-lg text-gray-700 mb-4">
-        Click the button to get a data fact!
-      </p>
-      <button 
-        onclick="generateFact()" 
-        class="bg-indigo-600 text-white font-semibold px-4 py-2 rounded hover:bg-indigo-700 transition duration-200"
-      >
-        Give me a fact
+      <p id="fact-box" class="text-lg text-gray-700 mb-4">Click below for a random data fact!</p>
+      <button onclick="generateFact()" aria-label="Generate a random data fact" class="bg-indigo-600 text-white font-semibold px-4 py-2 rounded hover:bg-indigo-700 transition duration-200">
+        Get a Fact
       </button>
     </div>
   </section>
-  
+
+  <section class="p-6 max-w-4xl mx-auto">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">Contact Me</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST" class="bg-white p-6 rounded-xl shadow-md max-w-lg mx-auto">
+      <input type="text" name="name" placeholder="Your Name" class="w-full p-2 mb-4 border rounded" required aria-label="Your Name">
+      <input type="email" name="email" placeholder="Your Email" class="w-full p-2 mb-4 border rounded" required aria-label="Your Email">
+      <textarea name="message" placeholder="Your Message" class="w-full p-2 mb-4 border rounded" rows="4" required aria-label="Your Message"></textarea>
+      <button type="submit" aria-label="Send contact form" class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition duration-200">Send</button>
+    </form>
+  </section>
+
+  <section class="p-6 max-w-4xl mx-auto text-center">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">Connect With Me</h2>
+    <div class="flex justify-center space-x-6">
+      <a href="https://www.linkedin.com/in/tinamtika/" target="_blank" aria-label="Tina Mtika's LinkedIn profile" class="text-indigo-600 hover:text-indigo-800 text-xl flex items-center">
+        <i class="fab fa-linkedin mr-1" title="LinkedIn"></i> LinkedIn
+      </a>
+      <a href="https://github.com/TinaMtika" target="_blank" aria-label="Tina Mtika's GitHub profile" class="text-gray-800 hover:text-black text-xl flex items-center">
+        <i class="fab fa-github mr-1" title="GitHub"></i> GitHub
+      </a>
+    </div>
+  </section>
+
+  <footer class="p-4 text-center text-gray-600 mt-10">
+    © 2025 Tina Mtika. Built with ❤️ and Tailwind CSS.
+  </footer>
+
   <script>
     const facts = [
       "Python is the most popular language for data science.",
@@ -68,34 +93,11 @@
       "Excel can handle over 1 million rows of data.",
       "GitHub Pages is perfect for hosting static sites."
     ];
-  
+
     function generateFact() {
       const randomIndex = Math.floor(Math.random() * facts.length);
       document.getElementById("fact-box").innerText = facts[randomIndex];
     }
   </script>
-      </py-script>
-    <div class="bg-indigo-100 p-4 rounded-xl">
-      <p id="fact-box" class="text-indigo-900 font-semibold mb-2">
-      <button class="bg-teal-500 text-white px-4 py-2 rounded-full hover:bg-teal-600 transition" pys-onClick="generate_fact">
-      </button>
-    </div>
-  </section>
-
-  <section class="p-6 max-w-4xl mx-auto text-center">
-    <h2 class="text-2xl font-bold text-gray-800 mb-4">Connect With Me</h2>
-    <div class="flex justify-center space-x-6">
-      <a href="https://www.linkedin.com/in/tinamtika/" target="_blank" class="text-indigo-600 hover:text-indigo-800 text-xl">
-        <i class="fab fa-linkedin"></i> LinkedIn
-      </a>
-      <a href="https://github.com/TinaMtika" target="_blank" class="text-gray-800 hover:text-black text-xl">
-        <i class="fab fa-github"></i> GitHub
-      </a>
-    </div>
-  </section>
-
-  <footer class="p-4 text-center text-gray-600 mt-10">
-    &copy; 2025 Tina Mtika. Built with ❤️ and PyScript.
-  </footer>
 </body>
 </html>
